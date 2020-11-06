@@ -1,0 +1,371 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Canvas、Layer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Unity路径.html" />
+    
+    
+    <link rel="prev" href="坐标系转换.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    读我
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="入门.html">
+            
+                <a href="入门.html">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="随笔.html">
+            
+                <a href="随笔.html">
+            
+                    
+                    随笔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="RectTransform.html">
+            
+                <a href="RectTransform.html">
+            
+                    
+                    RectTransform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="坐标系转换.html">
+            
+                <a href="坐标系转换.html">
+            
+                    
+                    坐标系转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="Canvas、Layer.html">
+            
+                <a href="Canvas、Layer.html">
+            
+                    
+                    Canvas、Layer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Unity路径.html">
+            
+                <a href="Unity路径.html">
+            
+                    
+                    Unity路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Shader.html">
+            
+                <a href="Shader.html">
+            
+                    
+                    Shader
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="PureMvc.html">
+            
+                <a href="PureMvc.html">
+            
+                    
+                    PureMvc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Protobuf.html">
+            
+                <a href="Protobuf.html">
+            
+                    
+                    Protobuf
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Canvas、Layer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="canvas&#x3001;layer">Canvas&#x3001;Layer</h1>
+<h4 id="render-mode">Render Mode</h4>
+<h5 id="screen-space--overlay">Screen Space -OverLay</h5>
+<ul>
+<li>Canvas&#x4F1A;&#x88AB;&#x7F29;&#x653E;&#x4EE5;&#x9002;&#x5E94;&#x5C4F;&#x5E55;&#xFF0C;&#x7136;&#x540E;&#x76F4;&#x63A5;&#x6E32;&#x67D3;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x65E0;&#x9700;&#x4EFB;&#x4F55;&#x6444;&#x50CF;&#x673A;&#xFF08;&#x5373;&#x4F7F;&#x5F53;&#x524D;Scene&#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6444;&#x50CF;&#x673A;&#xFF09;&#x3002;</li>
+<li>UI&#x4F1A;&#x8986;&#x76D6;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x6444;&#x50CF;&#x673A;&#x6240;&#x89C1;&#x7684;&#x753B;&#x9762;&#x3002;</li>
+</ul>
+<h5 id="screen-space-camera">Screen Space-Camera</h5>
+<ul>
+<li>UI&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x5927;&#x5C0F;&#x5E76;&#x4E0D;&#x968F;&#x6B64;&#x8DDD;&#x79BB;&#x53D8;&#x5316;&#x800C;&#x53D8;&#x5316;&#x3002;</li>
+<li>Scene&#x4E2D;&#x4EFB;&#x4F55;&#x6BD4;UI&#x5E73;&#x9762;&#x8DDD;&#x79BB;&#x6444;&#x50CF;&#x673A;&#x66F4;&#x8FD1;&#x7684;3D&#x7269;&#x4EF6;&#xFF0C;&#x90FD;&#x5C06;&#x5148;&#x4E8E;UI&#x88AB;&#x6E32;&#x67D3;&#x3002;</li>
+<li>&#x76F8;&#x53CD;&#x4F4D;&#x4E8E;UI&#x5E73;&#x9762;&#x540E;&#x9762;&#x7684;&#x7269;&#x4EF6;&#x5C31;&#x4F1A;&#x88AB;&#x906E;&#x6321;&#x3002;</li>
+</ul>
+<h5 id="world-space">World Space</h5>
+<ul>
+<li>UI&#x88AB;&#x770B;&#x4F5C;&#x662F;Scene&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5E73;&#x9762;&#x7269;&#x4EF6;&#x3002;</li>
+<li>&#x901A;&#x8FC7;RectTransform&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;Canvas&#x5C3A;&#x5BF8;&#xFF0C;&#x4F46;&#x4ED6;&#x7684;&#x5C4F;&#x5E55;&#x5927;&#x5C0F;&#x5C06;&#x53D6;&#x51B3;&#x4E8E;&#x6444;&#x50CF;&#x673A;&#x7684;&#x89C6;&#x89D2;&#x4EE5;&#x53CA;&#x8DDD;&#x79BB;&#x3002;</li>
+</ul>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<p><a href="https://gameinstitute.qq.com/community/detail/112504" target="_blank">https://gameinstitute.qq.com/community/detail/112504</a></p>
+<p><a href="https://www.shangmayuan.com/a/3a814ab1d2b949abae2a330b.html" target="_blank">https://www.shangmayuan.com/a/3a814ab1d2b949abae2a330b.html</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="坐标系转换.html" class="navigation navigation-prev " aria-label="Previous page: 坐标系转换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Unity路径.html" class="navigation navigation-next " aria-label="Next page: Unity路径">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Canvas、Layer","level":"1.6","depth":1,"next":{"title":"Unity路径","level":"1.7","depth":1,"path":"内容/Unity路径.md","ref":"内容/Unity路径.md","articles":[]},"previous":{"title":"坐标系转换","level":"1.5","depth":1,"path":"内容/坐标系转换.md","ref":"内容/坐标系转换.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"内容/Canvas、Layer.md","mtime":"2020-10-10T09:43:18.042Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-06T02:49:17.731Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
