@@ -10,6 +10,8 @@ Unity路径
 
 - Application.streamingAssetsPath:(只读)应用程序asset目录
 
+  ​	这是一个只读、不可写的目录。
+
   ​	unity说明：https://docs.unity3d.com/Manual/StreamingAssets.html
 
   ​	android平台参考：https://www.cnblogs.com/jpfss/p/9876384.html
@@ -32,4 +34,6 @@ android平台
 
 
 https://www.jianshu.com/p/bbc2690bce30
+
+https://www.cnblogs.com/chongxin/p/3958625.html
 

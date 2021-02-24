@@ -52,7 +52,12 @@ Shader(着色器)：是可以在GPU上运行的一段程序，通过Shader可以
 
 2. 一个材质同一时刻只能关联于一个Shader。
 
-   
+
+
+
+shadertoy-https://www.shadertoy.com
+
+unity shader官方文档-http://docs.unity3d.com/Documentation/Components/SL-SurfaceShaderLighting.html
 
 
 
